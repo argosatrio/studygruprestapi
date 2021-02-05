@@ -1,0 +1,14 @@
+[
+    { 
+    "ID": 1 ,
+    "ID BARANG": "TARO",
+    "NAMA RAK": "A1",
+    "FIFO": "5 Februari 2021"
+},
+    { 
+    "ID": 2 ,
+    "ID BARANG": "MILO",
+    "NAMA RAK": "B1",
+    "FIFO": "4 Februari 2021"
+}
+]

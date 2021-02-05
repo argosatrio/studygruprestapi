@@ -1,0 +1,16 @@
+[
+    {
+    "ID": 1,
+    "NAMA":"TARO",
+    "KATEGORI BARANG": "MAKANAN",
+    "STOCK": 20
+    },
+    {
+    "ID": 2,
+    "NAMA":"MILO",
+    "KATEGORI BARANG": "MINUMAN",
+    "STOCK": 10
+    }
+    
+
+]
