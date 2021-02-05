@@ -3,13 +3,15 @@
     "ID": 1,
     "NAMA":"TARO",
     "KATEGORI BARANG": "MAKANAN",
-    "STOCK": 20
+    "STOCK": 20,
+    "NOMER RAK" :"A1"
     },
     {
     "ID": 2,
     "NAMA":"MILO",
     "KATEGORI BARANG": "MINUMAN",
-    "STOCK": 10
+    "STOCK": 10,
+    "NOMER RAK" : "B1"
     }
     
 
