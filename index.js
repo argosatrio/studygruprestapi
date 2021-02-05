@@ -44,7 +44,37 @@ app.post(`/v1/barang`, (req, res) => {
   };
 
   barang.push(post);
-  res.status(201).json(barang);
+  res.status(201).json({
+    message: `data dengan id ${ID} berhasil ditambah`,
+    data: barang,
+  });
+});
+
+// update
+app.put(`/v1/barang/:id`, (req, res) => {
+  const ID = req.params.id;
+  barang.filter((post) => {
+    if (post.ID == ID) {
+      post.NAMA = req.body.NAMA;
+      post.KATEGORI = req.body.KATEGORI;
+      post.STOCK = req.body.STOCK;
+      post.RAK = req.body.RAK;
+      return post;
+    }
+  });
+  res.json({
+    message: `Data dengan id ${ID} telah sukses dihapus`,
+    data: barang,
+  });
+});
+
+// delete
+app.delete(`/v1/barang/:id`, (req, res) => {
+  barang = barang.filter((i) => i.ID !== +req.params.id);
+  res.status(200).json({
+    message: `Post dengan id ${req.params.id} telah berhasil dihapus`,
+    data: barang,
+  });
 });
 
 app.listen(3000, () => {
